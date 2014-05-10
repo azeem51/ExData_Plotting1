@@ -46,7 +46,11 @@ with(subtable, {
 })
 
 
-
+## create the png file with the above plot
 dev.copy(png, file="plot3.png", width = 480, height = 480)
+
+## close the png device
 dev.off()
+
+## close the graphics display device
 dev.off()

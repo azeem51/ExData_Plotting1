@@ -62,7 +62,10 @@ with(subtable, {
 })
 
 ## create a plot4.png file with the same plots
-
 dev.copy(png, file="plot4.png", width = 480, height = 480)
+
+## close the png device
 dev.off()
+
+## close the graphics display device
 dev.off()

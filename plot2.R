@@ -51,6 +51,12 @@ subtable <- cbind(subtable, DateTime = newdtcol)
 with(subtable, plot(DateTime, Global_active_power, xlab="",
 ylab="Global active power (kilowatts)", type="l"))
 
+
+## create the png file for this plot
 dev.copy(png, file="plot2.png", width = 480, height = 480)
+
+## close the png device
 dev.off()
+
+## close the graphics display device
 dev.off()
